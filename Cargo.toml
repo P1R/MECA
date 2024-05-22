@@ -1,0 +1,12 @@
+[package]
+name = "meca"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ethers = "2.0.11"
+tokio = { version = "1.35.0", features = ["full", "rt-multi-thread"] }
+dotenv = "0.15"
+ecies = {version = "0.2.7", default-features = false, features = ["xchacha20"]}
